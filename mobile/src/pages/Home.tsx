@@ -1,7 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions } from 'react-native';
-import Logo from '../images/logo.png';
 import { Feather } from '@expo/vector-icons';
 
 export default function Home(){
@@ -64,6 +63,8 @@ const styles = StyleSheet.create({
   footerText:{
     fontFamily:'Nunito_700Bold',
     color: '#fff',
+    marginTop:24,
+    fontSize: 16
   },
 
   navigateToMap: {
