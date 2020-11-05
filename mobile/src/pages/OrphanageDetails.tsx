@@ -29,7 +29,7 @@ interface Orphanage{
 export default function OrphanageDetails() {
   
   const route = useRoute();
-  const [orphanage, setOrphanage] = useState<Orphanage>();  
+  const [orphanage, setOrphanage] = useState<Orphanage>(); 
 
   const params = route.params as OrphanageRouteParams;
 
@@ -49,7 +49,7 @@ export default function OrphanageDetails() {
 
   function handleOpenGoogleMapRoutes(){
     Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${orphanage?.latitude},${orphanage?.longitude}`)
-  }
+  } 
 
   return (
     <ScrollView style={styles.container}>
